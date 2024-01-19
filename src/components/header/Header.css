@@ -1,0 +1,15 @@
+
+.header{
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 30px;
+}
+@media (max-width:900px) {
+    .header p{
+        padding: 0 20px;
+        text-align: center;
+    }
+}

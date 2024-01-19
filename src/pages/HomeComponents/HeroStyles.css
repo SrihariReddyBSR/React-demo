@@ -1,0 +1,220 @@
+/* Home.js component Styles */
+
+video{
+    height: 100vh;
+    width: 100%;
+    object-fit: cover;
+}
+.content{
+    padding: 0 30px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+}
+.content h1{
+    font-size: 50px;
+}
+.content p{
+    padding: 0 100px;
+    font-size: 20px;
+}
+.content .buttons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+.buttons a{
+    border: 1px solid white;
+    padding: 10px;
+    background-color: transparent;
+}
+
+/* About.js Component styles */
+
+.about{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 50px;
+    padding: 50px;
+}
+.about img{
+    height: 400px;
+    width: 100%;
+}
+.about-cont{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.about-cont p{
+    line-height: 30px;
+}
+
+@media (max-width: 1000px) {
+    .about{
+        flex-direction: column;
+    }
+}
+@media (max-width: 500px) {
+    .about img{
+       width: 100%;
+       height: auto;
+    }
+    .about-cont p{
+        text-align: center;
+        line-height: 25px;
+    }
+    
+}
+
+/* Services.js Component styles */
+
+.services{
+    width: 100%;
+    padding: 0 50px;
+}
+
+.services img{
+    margin: 100px 0;
+    width: 100%;
+    height: 500px;
+}
+@media (max-width:900px) {
+    .services img{
+        margin: 60px 0;
+        width: 100%;
+        height: 400px;
+    }
+}
+@media (max-width:500px) {
+    .services img{
+        margin: 50px 0;
+        width: 100%;
+        height: 300px;
+    }
+}
+
+/* CallToAction.js Component Styles */
+
+.call-to-action{
+    width: 100%;
+    height: 200px;
+    background-color: rgba(0,0,0,0.6);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.call-to-action button{
+    padding: 10px 20px;
+    background-color: transparent;
+    border: 1px solid white;
+
+}
+
+/* Model.js Component Styling */
+
+.overlay{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 9999999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0,0,0,0.8);
+}
+.overlay .model{
+    width: 600px;
+    height: 400px;
+    background-color: #080808;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 30px;
+    text-align: center;
+    position: relative;
+}
+.overlay .model .cross{
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    cursor: pointer;
+}
+
+/* FAQ's Section Styling */
+
+.faq{
+    width: 100%;
+    padding: 50px 100px;
+}
+
+.faq .item{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    flex-direction: column;
+}
+
+.faq .item .question{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 50px 0 0;
+}
+
+.faq .item .wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    flex-direction: column;
+    background-color: #080808;
+    padding: 20px 30px;
+    border-radius: 5px;
+}
+.answer{
+    max-height: 0;
+    overflow: hidden;
+    transition: all 0.2s cubic-bezier(0, 1, 0, 1);
+}
+.answer.show{
+    height: auto;
+    max-height: 99999px;
+    transition: all 0.5s cubic-bezier(1, 0, 1, 0);
+}
+
+@media (max-width: 600px) {
+    .faq{
+        padding: 50px;
+    }
+    .faq .item .question{
+        padding:0;
+    }
+    
+}
+@media (max-width: 400px) {
+    .faq{
+        padding: 20px;
+    }    
+}
